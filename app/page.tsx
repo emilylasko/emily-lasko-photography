@@ -9,7 +9,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="w-full relative h-[80vh] flex items-center justify-center">
         <Image
-          src="/header-image.svg"
+          src="/header-image.png"
           alt="Emily Lasko Photography"
           fill
           className="object-cover"
@@ -18,9 +18,9 @@ export default function Home() {
           sizes="100vw"
           onError={(e) => {
             console.error('Error loading header image');
-            // Fallback to PNG if SVG fails
+            // Fallback to SVG if PNG fails
             const target = e.target as HTMLImageElement;
-            target.src = '/header-image.png';
+            target.src = '/header-image.svg';
           }}
         />
         <div className="absolute inset-0 bg-black/30" />
