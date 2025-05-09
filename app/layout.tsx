@@ -27,27 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="preload"
-          href="/fonts/ScandiloverScript.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
-        <style>
-          {`
-            @font-face {
-              font-family: 'Scandilover Script';
-              src: url('/fonts/ScandiloverScript.ttf') format('truetype');
-              font-weight: normal;
-              font-style: normal;
-              font-display: swap;
-            }
-          `}
-        </style>
-      </head>
-      <body className={`font-scandilover ${ptSans.variable} antialiased min-h-screen flex flex-col`}>
+      <body className={`${ptSans.variable} font-sans antialiased min-h-screen flex flex-col`}>
         <Navigation />
         <main className="flex-grow">
           {children}

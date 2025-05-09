@@ -25,10 +25,10 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 text-center text-white px-4">
-          <p className="text-2xl md:text-4xl font-scandilover mb-4">
+          <p className="text-2xl md:text-4xl font-sans mb-4">
             Time stands still for no one, but memories last forever.
           </p>
-          <h2 className="text-3xl md:text-5xl font-scandilover mb-8">
+          <h2 className="text-3xl md:text-5xl font-sans mb-8">
             Let me capture yours.
           </h2>
           <Link
