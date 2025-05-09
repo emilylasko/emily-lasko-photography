@@ -9,11 +9,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="w-full relative h-[80vh] flex items-center justify-center">
         <Image
-          src="/header-image.jpg"
+          src="/header-image.png"
           alt="Emily Lasko Photography"
           fill
           className="object-cover"
           priority
+          quality={90}
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 text-center text-white px-4">
