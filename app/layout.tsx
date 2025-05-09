@@ -1,15 +1,6 @@
 import type { Metadata } from "next";
 import { PT_Sans } from "next/font/google";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const scandilover = localFont({
-  src: './fonts/ScandiloverScript.ttf',
-  variable: '--font-scandilover',
-  display: 'swap',
-  preload: true,
-  fallback: ['serif'],
-});
 
 const ptSans = PT_Sans({
   variable: '--font-pt-sans',
@@ -30,8 +21,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <style>
+          {`
+            @font-face {
+              font-family: 'Scandilover Script';
+              src: url('/fonts/ScandiloverScript.ttf') format('truetype');
+              font-weight: normal;
+              font-style: normal;
+              font-display: swap;
+            }
+          `}
+        </style>
+      </head>
       <body
-        className={`${scandilover.variable} ${ptSans.variable} antialiased`}
+        className={`font-scandilover ${ptSans.variable} antialiased`}
       >
         {children}
       </body>

@@ -78,7 +78,7 @@ export default function Home() {
         
         {/* Content */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-          <p className="text-3xl sm:text-4xl md:text-5xl text-white max-w-3xl font-light mb-8 md:mb-12 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] font-[var(--font-scandilover)]">
+          <p className="text-3xl sm:text-4xl md:text-5xl text-white max-w-3xl font-light mb-8 md:mb-12 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] font-scandilover">
             Time flies in the blink of an eye—let's capture it forever.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto">
@@ -101,7 +101,7 @@ export default function Home() {
       {/* About Section */}
       <div className="w-full bg-[#5f6041]/10 py-12 md:py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#231f20] mb-4 md:mb-6 font-[var(--font-scandilover)]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#231f20] mb-4 md:mb-6 font-scandilover">
             Life moves fast, but your memories don't have to fade.
           </h2>
           <p className="text-base sm:text-lg text-[#5f6041] font-[var(--font-pt-sans)] leading-relaxed">
