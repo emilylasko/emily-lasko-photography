@@ -25,12 +25,9 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 text-center text-white px-4">
-          <p className="text-2xl md:text-4xl font-sans mb-4">
-            Time stands still for no one, but memories last forever.
+          <p className="text-2xl md:text-4xl font-sans mb-8">
+            Time flies in the blink of an eye—let's capture it forever.
           </p>
-          <h2 className="text-3xl md:text-5xl font-sans mb-8">
-            Let me capture yours.
-          </h2>
           <Link
             href="/contact"
             className="inline-block px-8 py-3 bg-[#5f6041] text-white rounded-full font-medium hover:bg-[#746434] transition text-lg"
