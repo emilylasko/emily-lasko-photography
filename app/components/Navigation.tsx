@@ -50,7 +50,7 @@ export default function Navigation() {
           <nav 
             className={`${
               isMenuOpen ? 'flex' : 'hidden'
-            } md:flex flex-col md:flex-row items-center gap-4 text-[#231f20] font-medium text-sm font-[var(--font-pt-sans)] uppercase tracking-wide w-full md:w-auto bg-white md:bg-transparent fixed md:relative top-[80px] md:top-0 left-0 p-4 md:p-0 shadow-lg md:shadow-none z-50`}
+            } md:flex flex-col md:flex-row items-center gap-4 text-[#231f20] font-medium text-sm font-[var(--font-pt-sans)] uppercase tracking-wide w-full md:w-auto bg-white md:bg-transparent fixed md:relative top-0 md:top-0 left-0 p-4 md:p-0 shadow-lg md:shadow-none z-40`}
           >
             {/* Close button for mobile menu */}
             <button
@@ -76,7 +76,7 @@ export default function Navigation() {
 
             <Link 
               href="/portfolio" 
-              className="hover:text-[#5f6041] transition w-full md:w-auto text-center"
+              className="hover:text-[#5f6041] transition w-full md:w-auto text-center mt-16 md:mt-0"
               onClick={closeMenu}
             >
               Portfolio
