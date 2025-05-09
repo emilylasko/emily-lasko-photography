@@ -5,7 +5,7 @@ export default function Investment() {
         <h1 className="text-4xl font-bold text-center mb-8 text-[#5f6041]">Investment</h1>
         <div className="prose prose-lg mx-auto">
           <p className="text-xl text-center mb-8 text-[#746434]">
-            Capturing your precious moments is an investment in memories that will last a lifetime.
+          Quality photography is more than just a session—it's an investment in preserving your memories for a lifetime.
           </p>
           <div className="space-y-8">
             <div className="bg-gray-50 p-6 rounded-lg">
