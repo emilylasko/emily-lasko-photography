@@ -7,6 +7,10 @@ import { useState } from "react";
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="w-full bg-white shadow-sm relative">
       <header className="w-full py-2 px-4 md:px-8">
@@ -48,21 +52,60 @@ export default function Navigation() {
               isMenuOpen ? 'flex' : 'hidden'
             } md:flex flex-col md:flex-row items-center gap-4 text-[#231f20] font-medium text-sm font-[var(--font-pt-sans)] uppercase tracking-wide w-full md:w-auto bg-white md:bg-transparent fixed md:relative top-[80px] md:top-0 left-0 p-4 md:p-0 shadow-lg md:shadow-none z-50`}
           >
-            <Link href="/portfolio" className="hover:text-[#5f6041] transition w-full md:w-auto text-center">
+            {/* Close button for mobile menu */}
+            <button
+              onClick={closeMenu}
+              className="md:hidden absolute top-4 right-4 p-2 text-[#231f20] hover:text-[#5f6041] transition"
+              aria-label="Close menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <Link 
+              href="/portfolio" 
+              className="hover:text-[#5f6041] transition w-full md:w-auto text-center"
+              onClick={closeMenu}
+            >
               Portfolio
             </Link>
-            <Link href="/investment" className="hover:text-[#5f6041] transition w-full md:w-auto text-center">
+            <Link 
+              href="/investment" 
+              className="hover:text-[#5f6041] transition w-full md:w-auto text-center"
+              onClick={closeMenu}
+            >
               Investment
             </Link>
-            <Link href="/about" className="hover:text-[#5f6041] transition w-full md:w-auto text-center">
+            <Link 
+              href="/about" 
+              className="hover:text-[#5f6041] transition w-full md:w-auto text-center"
+              onClick={closeMenu}
+            >
               About
             </Link>
-            <Link href="/contact" className="hover:text-[#5f6041] transition w-full md:w-auto text-center">
+            <Link 
+              href="/contact" 
+              className="hover:text-[#5f6041] transition w-full md:w-auto text-center"
+              onClick={closeMenu}
+            >
               Contact
             </Link>
             <Link
               href="/contact"
               className="w-full md:w-auto px-4 py-1.5 bg-[#5f6041] text-white rounded-full font-medium hover:bg-[#746434] transition text-sm text-center"
+              onClick={closeMenu}
             >
               Book Your Shoot
             </Link>
