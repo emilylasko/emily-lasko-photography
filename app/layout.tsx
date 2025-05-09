@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const scandilover = localFont({
-  src: '../public/fonts/ScandiloverScript.ttf',
+  src: '../../public/fonts/ScandiloverScript.ttf',
   variable: '--font-scandilover',
   display: 'swap',
   preload: true,
